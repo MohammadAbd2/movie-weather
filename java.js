@@ -1,12 +1,12 @@
- $(document).ready(function() {
-   $.getJSON("Movie_20.json", function(json) {
-        var html = "";
-        json.forEach(function(val) {
-  var keys = Object.keys(val);
-  html += "<div class = 'cat'>";
-  keys.forEach(function(key) {
-    $("#FirstID").push(key);
-  });
+$(document).ready(function() {
+  $("#mydata").on("click",function(){
+    $.ajax({
+  url: 'movie_20.json',
+  method: 'GET'
+}).then(function(json) {
+  console.log(json);
+       console.log(json);
+       $("#maintext").html("<div id='maintext'>"+ "<h2>" + json[0].title + "</h2>" + "<div>");
   });
 });
  });
