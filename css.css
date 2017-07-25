@@ -1,0 +1,40 @@
+#container{
+  width:90%;
+  height:auto;
+  margin-top:10px;
+}
+img{
+  width:100%;
+  height:100%;
+}
+.title{
+  font-size: 24px;
+  font-family:inherit;
+  float:left;
+}
+#search{
+  float: right;
+  width: 27%;
+  height:50px;
+  background-color:darkgray;
+  margin-top:55px;
+border-radius: 10px;
+border-style: groove;
+}
+#search-box {
+  border-radius: 10px;
+  width:80%;
+  border-style: solid;
+}
+input{
+  margin-top:10px;
+  margin-left:15px;
+}
+.movies{
+  width:25%;
+  height:500px;
+  background-color:white;
+  margin-left:25px;
+  margin-top : 30px;
+float:left;
+}

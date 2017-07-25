@@ -1,11 +1,15 @@
 $(document).ready(function() {
-  $("#mydata").on("click",function(){
     $.ajax({
   url: 'movie_20.json',
   method: 'GET'
 }).then(function(json) {
   console.log(json);
-       $("#maintext").html("<div id='maintext'>"+ "<h2>" + json[0].title + "</h2>" + "<div>");
-  });
+json.forEach(function(film){
+  $("#container").html($("#container").html() + "<div class='movies'>" + "<div class='title'>" + film.title  + "<img src='" + film.posterurl + "'>" + "</div>" + "</div>");
+$("#botton").on("click", function(){
+  
 });
- });
+});
+});
+
+        });
